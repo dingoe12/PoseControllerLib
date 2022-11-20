@@ -13,7 +13,7 @@ def main(source, complexity=2, point_min_conf=0.5, det_min_conf=0.5):
         mp.solutions.drawing_utils.draw_landmarks(image, results.pose_landmarks, mp.solutions.pose.POSE_CONNECTIONS)
         image = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
         cv2.imshow("Pose Detection", image)
-        if cv2.waitKey(0) & 0xFF == ord('q'):
+        if cv2.waitKey(1) & 0xFF == ord('q'):
             break
 
 
