@@ -1,4 +1,6 @@
 
-PoseControllerLib/.idea/
-
 .idea/workspace.xml
+
+src/.idea/
+
+src/basic_detection/__pycache__/
