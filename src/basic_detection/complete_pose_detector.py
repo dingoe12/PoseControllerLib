@@ -1,4 +1,4 @@
-from basic_detection import I_complete_pose_detector
+from basic_detection import I_complete_pose_detector, video_source
 import mediapipe as mp
 
 class CompletePoseDetection(I_complete_pose_detector.ICompletePoseDetector):
@@ -8,7 +8,7 @@ class CompletePoseDetection(I_complete_pose_detector.ICompletePoseDetector):
                  min_detection_confidence: float = 0.5):
         """Initializes the complete pose detector based on the video source provided using the provided parameters."""
         super().__init__(source, model_complexity, min_point_confidence, min_detection_confidence)
-        self.video = source
+        self.video = video_source.VideoSource(source)
         self.mpPose = mp.solutions.pose.Pose(model_complexity=model_complexity,
                                              min_detection_confidence=min_detection_confidence,
                                              min_tracking_confidence=min_point_confidence)
