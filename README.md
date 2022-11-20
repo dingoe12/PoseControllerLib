@@ -9,4 +9,4 @@ A project to provide a way to allow full body precense in media applications.
 
 # Code of conduct / contributon guidelines:
 
-  see [Code Of Conduct](coc_page)
+  see [Code Of Conduct](https://github.com/dingoe12/PoseControllerLib/blob/master/CODE_OF_CONDUCT.md)
