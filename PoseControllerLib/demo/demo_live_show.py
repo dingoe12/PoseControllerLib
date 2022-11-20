@@ -21,9 +21,9 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Demo for the complete pose detector.")
     parser.add_argument("--source", type=str, default="0", help="The source of the video.")
     parser.add_argument("--complexity", type=int, default=2, help="The model complexity of the pose detector.")
-    parser.add_argument("--point_min_conf", type=float, default=0.5,
+    parser.add_argument("--point-min-conf", type=float, default=0.5,
                         help="The minimum confidence for a point to be detected.")
-    parser.add_argument("--det_min_conf", type=float, default=0.5,
+    parser.add_argument("--det-min-conf", type=float, default=0.5,
                         help="The minimum confidence for a detection to be detected.")
     args = parser.parse_args()
     main(args.source, args.complexity, args.point_min_conf, args.det_min_conf)
